@@ -7,11 +7,9 @@ import java.util.Stack;
  * Created by Mayeul on 2/17/2016.
  */
 public class SimpleStackImpl implements SimpleStack {
-    private int taille;
     private Stack<Item> pile;
 
     public SimpleStackImpl(){
-        this.taille = 0;
         this.pile = new Stack<Item>();
     }
 
@@ -20,8 +18,8 @@ public class SimpleStackImpl implements SimpleStack {
         return this.pile.isEmpty();
     }
 
-    public int getTaille() {
-        return this.taille;
+    public int getSize() {
+        return this.pile.size();
     }
 
     @Override

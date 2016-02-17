@@ -15,7 +15,7 @@ public interface SimpleStack {
      * Returns the number of items in this stack.
      */
 
-    public int getTaille();
+    public int getSize();
     /**
      * Pushes an item onto the top of this stack.
      * null item is allowed.
