@@ -4,7 +4,10 @@ import org.junit.Assert;
 import org.junit.Test;
 
 /**
- * Created by Mayeul on 2/17/2016.
+ * Created by Mayeul Grivet-Roux on 2/17/2016.
+ *
+ * réponse à l'exigence 1 car je suis très fort
+ *
  */
 public class SimpleStackImplTest {
 
@@ -52,7 +55,7 @@ public class SimpleStackImplTest {
         Assert.assertEquals(0, maPileTest.getSize());
         maPileTest.push(i);
         Assert.assertEquals(1, maPileTest.getSize());
-        Item check = maPileTest.peek();
+        maPileTest.peek();
         Assert.assertEquals(1, maPileTest.getSize());
     }
 
@@ -62,7 +65,7 @@ public class SimpleStackImplTest {
         Assert.assertEquals(0, maPileTest.getSize());
         maPileTest.push(i);
         Assert.assertEquals(1, maPileTest.getSize());
-        Item check = maPileTest.pop();
+        maPileTest.pop();
         Assert.assertEquals(0, maPileTest.getSize());
     }
 }
